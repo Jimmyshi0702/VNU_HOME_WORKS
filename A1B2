@@ -3,13 +3,131 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "bfa57be0-66e7-466e-9528-4cfd3be02695",
+   "id": "6f0868d2-7d75-4288-a53c-ce77e60c04ea",
    "metadata": {},
    "outputs": [],
    "source": [
-    "print(\"ID: 123456789\")\n",
-    "print(\"1A2B 作業真簡單\")"
+    "print (\"bc0210015 林易辰\")"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "5d193279-130f-4d7f-aad1-71461f23d5f8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 5648\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5648: 0A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 3846\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3846: 0A3B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 8946\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8946: 0A3B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 1234\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1234: 0A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 6492\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6492: 3A0B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 6493\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6493: 4A0B\n",
+      "答對了！\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "answer = random.sample(range(1, 10), 4)\n",
+    "a = b = n = 0\n",
+    "while a!=4:\n",
+    "    a = b = n = 0\n",
+    "    user = list(input('輸入四00個數字：'))\n",
+    "    for i in user:\n",
+    "        if int(user[n]) == answer[n]:\n",
+    "            a += 1\n",
+    "        else:\n",
+    "            if int(i) in answer:\n",
+    "                b += 1\n",
+    "        n += 1\n",
+    "    output = ','.join(user).replace(',','')\n",
+    "    print(f'{output}: {a}A{b}B')\n",
+    "print(\"答對了！\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ed7c5ec6-18b9-4816-a61f-2c37bbb60c8b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
@@ -34,3 +152,4 @@
  "nbformat": 4,
  "nbformat_minor": 5
 }
+
